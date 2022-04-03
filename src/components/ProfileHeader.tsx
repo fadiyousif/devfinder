@@ -5,14 +5,14 @@ export type ProfileHeaderProps = {
    username: string
    displayName: string | null
    isLightTheme: boolean
-   renderDate: () => string
+   formatDate: () => string
 }
 
 export const ProfileHeader = ({
    avatarUrl,
    username,
    displayName,
-   renderDate,
+   formatDate,
    isLightTheme,
 }: ProfileHeaderProps) => (
    <div className="user-upper-container">
@@ -23,7 +23,7 @@ export const ProfileHeader = ({
                {displayName || username}
             </h2>
             <span className={cx("joined-date", { light: isLightTheme })}>
-               {renderDate()}
+               {formatDate()}
             </span>
          </div>
          <h3 className="username">{`@${username}`}</h3>

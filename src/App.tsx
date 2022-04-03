@@ -41,12 +41,12 @@ export const App = () => {
             if (!data) {
                return false
             }
-            renderInfo(data)
+            setInfo(data)
          })
          .catch((err) => console.error(err))
    }
 
-   const renderInfo = (data: any) => {
+   const setInfo = (data: any) => {
       const {
          avatar_url,
          login: username,
@@ -76,7 +76,7 @@ export const App = () => {
       setCompany(company)
    }
 
-   const renderDate = () => {
+   const formatDate = () => {
       const [month, day, year] = new Date(joinedDate)
          .toDateString()
          .split(" ")
@@ -109,7 +109,7 @@ export const App = () => {
                website={website}
                company={company}
                avatarUrl={avatarUrl}
-               renderDate={renderDate}
+               formatDate={formatDate}
                isLightTheme={isLightTheme}
             />
          </div>

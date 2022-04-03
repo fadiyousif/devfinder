@@ -22,7 +22,7 @@ export const UserProfile = ({
    twitterUsername,
    website,
    company,
-   renderDate,
+   formatDate,
    isLightTheme,
 }: UserProfileProps) => (
    <article className={cx("user-profile", { light: isLightTheme })}>
@@ -31,7 +31,7 @@ export const UserProfile = ({
          username={username}
          displayName={displayName}
          isLightTheme={isLightTheme}
-         renderDate={renderDate}
+         formatDate={formatDate}
       />
 
       <div className="user-lower-container">
