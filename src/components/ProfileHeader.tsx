@@ -1,4 +1,5 @@
 import cx from "classnames"
+import { Image } from "./Image"
 
 export type ProfileHeaderProps = {
    avatarUrl: string
@@ -16,7 +17,7 @@ export const ProfileHeader = ({
    isLightTheme,
 }: ProfileHeaderProps) => (
    <div className="user-upper-container">
-      <img src={avatarUrl} className="user-image" alt="avatar" />
+      <Image src={avatarUrl} />
       <div className="name-and-date-container">
          <div className="name-and-date">
             <h2 className={cx("display-name", { light: isLightTheme })}>
