@@ -2,13 +2,14 @@ import cx from "classnames"
 import { ProfileHeader, ProfileHeaderProps } from "./ProfileHeader"
 import { UserStats, UserStatsProps } from "./UserStats"
 import { UserInfo, UserInfoProps } from "./UserInfo"
+import { Bio, BioProps } from "./Bio"
 
 type UserProfileProps = {
    joinedDate: string
-   bio: string | null
 } & ProfileHeaderProps &
    UserStatsProps &
-   UserInfoProps
+   UserInfoProps &
+   BioProps
 
 export const UserProfile = ({
    avatarUrl,
@@ -35,9 +36,7 @@ export const UserProfile = ({
       />
 
       <div className="user-lower-container">
-         <p className={cx("bio", { grey: !bio, light: isLightTheme })}>
-            {bio || "This profile has no bio"}
-         </p>
+         <Bio bio={bio} isLightTheme={isLightTheme} />
 
          <UserStats
             publicRepos={publicRepos}
