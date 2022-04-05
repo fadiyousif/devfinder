@@ -1,5 +1,6 @@
 import cx from "classnames"
 import { Image } from "./Image"
+import { JoinedDate } from "./JoinedDate"
 
 export type ProfileHeaderProps = {
    avatarUrl: string
@@ -23,9 +24,7 @@ export const ProfileHeader = ({
             <h2 className={cx("display-name", { light: isLightTheme })}>
                {displayName || username}
             </h2>
-            <span className={cx("joined-date", { light: isLightTheme })}>
-               {formatDate()}
-            </span>
+            <JoinedDate date={formatDate()} isLightTheme={isLightTheme} />
          </div>
          <h3 className="username">{`@${username}`}</h3>
       </div>
