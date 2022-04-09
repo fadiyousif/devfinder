@@ -23,7 +23,7 @@ ul {
    justify-content: center;
    align-items: center;
    height: 100vh;
-   padding: 0 30px;
+   padding: 30px;
 }
 
 .app.light {
@@ -160,7 +160,7 @@ form.light {
 
 .user-image {
    max-width: 117px;
-   height: fit-content;
+   height: 117px;
    border-radius: 50%;
    margin-right: 37px;
 }
@@ -290,6 +290,7 @@ form.light {
 
    .user-image {
       max-width: 100px;
+      max-height: 100px;
    }
 
    .name-and-date {
@@ -386,6 +387,7 @@ form.light {
 
    .user-image {
       max-width: 70px;
+      max-height: 70px;
       margin-right: 20px;
    }
 
