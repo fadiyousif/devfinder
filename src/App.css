@@ -5,12 +5,17 @@
    font-family: "Space Mono", monospace;
    transition: background-color 200ms linear;
    margin: 0;
+   padding: 0;
 }
 
 body {
    font-size: 15px;
    background-color: #141d2f;
    color: #fff;
+}
+
+ul {
+   list-style-type: none;
 }
 
 .app {

@@ -53,7 +53,7 @@ export const UserInfoItem = ({
    }
 
    return (
-      <div className={cx("item", { light: isLightTheme })}>
+      <li className={cx("item", { light: isLightTheme })}>
          {index > 0 ? (
             <a
                href={setHref(item)}
@@ -66,6 +66,6 @@ export const UserInfoItem = ({
          ) : (
             infoFragment(item, index)
          )}
-      </div>
+      </li>
    )
 }

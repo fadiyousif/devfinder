@@ -17,7 +17,7 @@ export const UserStats = ({
    const stats = [publicRepos, followers, following]
 
    return (
-      <div className={cx("stats", { light: isLightTheme })}>
+      <ul className={cx("stats", { light: isLightTheme })}>
          {stats.map((count, index) => (
             <UserStatsItem
                count={count}
@@ -26,6 +26,6 @@ export const UserStats = ({
                isLightTheme={isLightTheme}
             />
          ))}
-      </div>
+      </ul>
    )
 }

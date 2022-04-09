@@ -18,7 +18,7 @@ export const UserInfo = ({
    const info = [location, twitterUsername, website, company]
 
    return (
-      <div className="user-info">
+      <ul className="user-info">
          {info.map((item, index) => (
             <UserInfoItem
                item={item}
@@ -27,6 +27,6 @@ export const UserInfo = ({
                isLightTheme={isLightTheme}
             />
          ))}
-      </div>
+      </ul>
    )
 }
