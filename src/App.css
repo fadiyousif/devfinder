@@ -336,6 +336,7 @@ form.light {
 
    .username {
       font-size: 13px;
+      margin-bottom: 10px;
    }
 
    form {
@@ -356,7 +357,7 @@ form.light {
    }
 
    .user-profile {
-      padding: 32px 24px 48px;
+      padding: 30px 24px 30px;
    }
 
    .display-name {
@@ -370,9 +371,7 @@ form.light {
    .number {
       font-size: 16px;
    }
-}
 
-@media (max-width: 480px) {
    .container {
       width: 95vw;
    }
@@ -391,8 +390,13 @@ form.light {
       margin-right: 20px;
    }
 
+   .bio {
+      margin-bottom: 25px;
+   }
+
    .stats {
       padding: 15px;
+      margin-bottom: 25px;
    }
 
    .stats > div:not(:last-of-type) {
@@ -407,7 +411,15 @@ form.light {
 }
 
 @media (max-width: 360px) {
+   .joined-date {
+      font-size: 11px;
+   }
+
    .input-field {
       font-size: 11px;
+   }
+
+   .search-button {
+      padding: 5px 8px;
    }
 }
