@@ -33,6 +33,9 @@ export const App = () => {
                return res.json()
             } else {
                console.error(`${res.status} error`)
+               if (isInvalidQuery) {
+                  return
+               }
                setIsInvalidQuery(true)
                setTimeout(() => setIsInvalidQuery(false), 3000)
             }
