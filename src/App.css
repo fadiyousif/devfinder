@@ -404,6 +404,12 @@ form.light {
    }
 }
 
+@media (max-width: 450px) {
+   body {
+      margin: 50px 0;
+   }
+}
+
 @media (max-width: 390px) {
    .input-field {
       font-size: 12px;
