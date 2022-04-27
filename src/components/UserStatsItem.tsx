@@ -13,7 +13,7 @@ export const UserStatsItem = ({
    index,
    isLightTheme,
 }: UserStatsItemProps) => (
-   <li className="repos">
+   <li>
       <span className={cx("category", { light: isLightTheme })}>
          {categories[index]}
       </span>
